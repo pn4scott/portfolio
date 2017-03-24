@@ -1,0 +1,74 @@
+.body-text{
+	font-size: 30px;
+}
+
+.body-text-1{
+	font-size: 20px;
+}
+
+header a{
+		font-size: 13px;
+	}
+
+@media screen and (max-width: 670px) {
+
+	.body-text{
+		font-size: 17px;
+	}
+
+	.body-text-1{
+		font-size: 12px;
+	}
+
+	#branding h1{
+		font-size: 20px;
+	}
+
+	header a{
+		font-size: 10px;
+	}
+
+	.tab-div{
+		float: none;
+		margin: 3% 25% 3% 25%;
+	}
+
+	.tab-div p {
+	font-size: 67%;
+	padding-bottom: 5%;
+	}
+
+}
+
+@media screen and (max-width: 270px) {
+	.body-text{
+		font-size: 12px;
+	}
+
+	.body-text-1{
+		font-size: 7px;
+	}
+
+	#branding h1{
+		font-size: 15px;
+		margin: auto;
+	}
+
+	header a{
+		font-size: 8px;
+	}
+
+	.tab-div{
+		float: none;
+		margin: 3% 25% 3% 25%;
+	}
+
+	.tab-div p {
+		font-size: 50%;
+		padding-bottom: 5%;
+	}
+
+	.tab-div h3 {
+		font-size: 50%;
+	}
+}
