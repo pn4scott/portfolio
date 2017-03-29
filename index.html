@@ -1,43 +1,9 @@
-<?php
-	if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])) {
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		$message = $_POST['message'];
-		$to = 'nndukwo@claflin.edu';
-		$subject = 'New Contact';
-		$body = '<html>
-					<body>
-						<h2> Feedback- '.$email'</h2>
-						<hr>
-						<p>Name: <br>'.$name'</p>
-						<p>Email: <br>'.$email'</p>
-						<p>Message: <br>'.$message'</p>	
-					</body>
-				</html>';
-
-		//headers
-		$headers = "From: ".$name." <".$email.">\r\n";
-		$headers .= "Reply-To: ".$email."\r\n";
-		$headers .= "MIME-Version: 1.0\r\n";
-		$headers .= "Content-type: text/html; character-utf-8";
-
-		//send
-		$send = mail($to, $subject, $body, $headers);
-		if ($send) {
-			echo '<br>';
-			echo 'Thank you for contacting me. I will get back to you as soon as possible';
-		} else {
-			echo 'error';
-		}
-}
-?>
-
 <!doctype html>
 <html>
 	<head>
 		<title>Nwokeocha Ndukwo | Welcome</title>
-		<link href="../css/index.css" rel="stylesheet" type="text/css">
-		<link href="../css/responsive.css" rel="stylesheet" media="screen and (max-width: 995px)">
+		<link href="index.css" rel="stylesheet" type="text/css">
+		<link href="responsive.css" rel="stylesheet" media="screen and (max-width: 995px)">
 		<meta name="viewport" content="width=device-width">
 		<meta charset="utf-8">
 		<meta name="keywords" content="website, personal, nwokeocha, ndukwo">
@@ -54,7 +20,7 @@
 				<nav>
 					<ul>
 						<li><a href="index.html">About</a></li>
-						<li><a href="about.html">Portfolio</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</nav>
@@ -62,7 +28,7 @@
 		</header>
 		
 		<section id="boxes">
-			<div id="showcase">
+			<div id="showcase" style="max-height: 100%; background-image: 'keyboard_pic.jpg' no-repeat 0; width: 100%;">
 				<div class="container-2">
 					<p class="body-text">Nwokeocha Ndukwo | Aspiring Software Engineer<br>
 					<span class="body-text-1">Computer Science Major | Backend programmer | Web developer<span></p>

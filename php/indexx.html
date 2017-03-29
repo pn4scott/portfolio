@@ -7,11 +7,11 @@
 		$subject = 'New Contact';
 		$body = '<html>
 					<body>
-						<h2> Feedback- '.$email'</h2>
+						<h2> Feedback- '.$email.'</h2>
 						<hr>
-						<p>Name: <br>'.$name'</p>
-						<p>Email: <br>'.$email'</p>
-						<p>Message: <br>'.$message'</p>	
+						<p>Name: <br>'.$name.'</p>
+						<p>Email: <br>'.$email.'</p>
+						<p>Message: <br>'.$message.'</p>	
 					</body>
 				</html>';
 
@@ -36,8 +36,8 @@
 <html>
 	<head>
 		<title>Nwokeocha Ndukwo | Welcome</title>
-		<link href="../css/index.css" rel="stylesheet" type="text/css">
-		<link href="../css/responsive.css" rel="stylesheet" media="screen and (max-width: 995px)">
+		<link href="index.css" rel="stylesheet" type="text/css">
+		<link href="responsive.css" rel="stylesheet" media="screen and (max-width: 995px)">
 		<meta name="viewport" content="width=device-width">
 		<meta charset="utf-8">
 		<meta name="keywords" content="website, personal, nwokeocha, ndukwo">
@@ -84,14 +84,14 @@
 					</div>
 				</div>
 				<div class="box">
-					<form id="form">
+					<form id="form" action="" method="post">
 						<div id="form-div">
 							<h2 class="hstyle"> Contact me</h2>
 							<input type ="text" name="name" cols = "25" row = "7" placeholder="Name" class="form-element"></input><br><br>
 							<input type="email" name="email" cols = "25" row = "7" placeholder="Email" class="form-element"></input><br><br>
 							<textarea type="text" name="message" cols = "27" row ="35" placeholder="Message" class="form-element"></textarea><br><br>
-							<button input type= "submit" class="button">Comment</button>
-							<button input type= "reset" class="button">Reset</button>
+							<button input type= "submit" value="Submit" class="button">Comment</button>
+							<button input type= "reset" value="Reset" class="button">Reset</button>
 							<h3 class="hstyle">Thank you for visiting my website</h3>
 						</div>
 					</form>
