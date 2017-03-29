@@ -91,7 +91,7 @@
 							<input type="email" name="email" cols = "25" row = "7" placeholder="Email" class="form-element"></input><br><br>
 							<textarea type="text" name="message" cols = "27" row ="35" placeholder="Message" class="form-element"></textarea><br><br>
 							<button input type= "submit" class="button">Comment</button>
-							<button input type= "reset" class="button">Reset</button>
+							<button input type= "submit" class="button">Reset</button>
 							<h3 class="hstyle">Thank you for visiting my website</h3>
 						</div>
 					</form>
