@@ -30,6 +30,9 @@
 			echo 'error';
 		}
 }
+elseif !(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])){
+	echo 'all inputs are required';
+}
 ?>
 
 <!doctype html>
@@ -66,7 +69,7 @@
 					<div id="form-div">
 						<h2 class="hstyle"> Contact me</h2>
 						<input type ="text" name="name" cols = "25" row = "7" placeholder="Name" class="form-element"></input><br><br>
-						<input type="text" name="email" cols = "25" row = "7" placeholder="Email" class="form-element"></input><br><br>
+						<input type="email" name="email" cols = "25" row = "7" placeholder="Email" class="form-element"></input><br><br>
 						<textarea type="text" name="message" cols = "27" row ="35" placeholder="Message" class="form-element"></textarea><br><br>
 						<button input type= "submit" value="Submit" class="button">Comment</button>
 						<button input type= "reset" value="Reset" class="button">Reset</button>
